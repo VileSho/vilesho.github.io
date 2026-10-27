@@ -680,6 +680,132 @@
       </div>
     </section>
 
+    <!-- TryHackMe Hands-On Lab Journal Section -->
+    <section id="thm-journal">
+      <div class="section-header">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.75rem;">
+          <div>
+            <span class="section-tag">01.5 // Active Lab Telemetry</span>
+            <h2 class="section-title">TryHackMe Hands-On Lab Journal</h2>
+          </div>
+          <span class="tag" style="border-color: var(--accent-cyan); color: var(--accent-cyan);">
+            [PROGRESS: 03/15 ROOMS COMPLETED]
+          </span>
+        </div>
+      </div>
+
+      <div class="grid-2">
+
+        <!-- COMPLETED: Linux Core Foundations (Entries 1-3) -->
+        <div class="card" style="border-left: 4px solid var(--accent-green);">
+          <div>
+            <div class="card-header">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+                <span class="card-kicker">Linux Architecture // Entries 1–3</span>
+                <span class="tag" style="border-color: var(--accent-green); color: var(--accent-green); font-size: 0.7rem;">[✔] COMPLETED</span>
+              </div>
+              <h3 class="card-title">Linux Fundamentals (1, 2 &amp; 3)</h3>
+            </div>
+            <p>
+              Core shell interaction, process management, POSIX filesystem security, log monitoring, and automated cron task verification.
+            </p>
+            <ul>
+              <li><strong>POSIX Permissions:</strong> Enforced absolute mode octal rights (<code>chmod 750</code>) and directory sticky-bits.</li>
+              <li><strong>Process Management:</strong> Inspected PID tree hierarchies (<code>ps aux</code>, <code>kill -9</code>) and automated background loops.</li>
+              <li><strong>Service Hardening:</strong> Configured cron automation (<code>/etc/crontab</code>) and systemd daemon units (<code>systemctl</code>).</li>
+            </ul>
+          </div>
+          <div class="tag-list">
+            <span class="tag">Bash</span>
+            <span class="tag">chmod / chown</span>
+            <span class="tag">cron</span>
+            <span class="tag">systemd</span>
+            <span class="tag">Linux FHS</span>
+          </div>
+        </div>
+
+        <!-- PENDING: Network & System Logging (Entries 4-5) -->
+        <div class="card" style="border-left: 4px solid var(--border); opacity: 0.85;">
+          <div>
+            <div class="card-header">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+                <span class="card-kicker">Telemetry &amp; Inspection // Entries 4–5</span>
+                <span class="tag" style="border-color: var(--accent-amber); color: var(--accent-amber); font-size: 0.7rem;">[⏳] IN PROGRESS</span>
+              </div>
+              <h3 class="card-title">Intro to Logs &amp; Wireshark Basics</h3>
+            </div>
+            <p>
+              Parsing system authentication telemetry, Syslog aggregation, and deep packet inspection for unencrypted credential extraction.
+            </p>
+            <ul style="color: var(--text-muted);">
+              <li><strong>Entry 4 (Intro to Logs):</strong> Syslog hierarchy, <code>/var/log/auth.log</code>, and authentication failure audits.</li>
+              <li><strong>Entry 5 (Wireshark Basics):</strong> PCAP filter syntax, stream following, and network protocol anomaly detection.</li>
+            </ul>
+          </div>
+          <div class="tag-list">
+            <span class="tag">Syslog</span>
+            <span class="tag">Wireshark</span>
+            <span class="tag">PCAP</span>
+            <span class="tag">Log Triage</span>
+          </div>
+        </div>
+
+        <!-- PENDING: Windows Architecture & Auditing (Entries 6-8) -->
+        <div class="card" style="border-left: 4px solid var(--border); opacity: 0.85;">
+          <div>
+            <div class="card-header">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+                <span class="card-kicker">Windows Security // Entries 6–8</span>
+                <span class="tag" style="border-color: var(--text-muted); color: var(--text-muted); font-size: 0.7rem;">[⏳] QUEUED</span>
+              </div>
+              <h3 class="card-title">Windows Fundamentals (1, 2 &amp; 3)</h3>
+            </div>
+            <p>
+              NTFS permissions, Registry hive navigation, User Account Control (UAC), and native Windows security subsystem analysis.
+            </p>
+            <ul style="color: var(--text-muted);">
+              <li><strong>Core Components:</strong> NTFS permissions, SAM hive containment, and command-line system inspection.</li>
+              <li><strong>Hardening:</strong> Local Security Policy, Windows Defender configuration, and Task Scheduler audits.</li>
+            </ul>
+          </div>
+          <div class="tag-list">
+            <span class="tag">NTFS</span>
+            <span class="tag">Registry</span>
+            <span class="tag">UAC</span>
+            <span class="tag">SecPol</span>
+          </div>
+        </div>
+
+        <!-- PENDING: Forensics & Enterprise SIEM (Entries 9-15) -->
+        <div class="card" style="border-left: 4px solid var(--border); opacity: 0.85;">
+          <div>
+            <div class="card-header">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+                <span class="card-kicker">DFIR &amp; SIEM // Entries 9–15</span>
+                <span class="tag" style="border-color: var(--text-muted); color: var(--text-muted); font-size: 0.7rem;">[⏳] QUEUED</span>
+              </div>
+              <h3 class="card-title">Windows Forensics &amp; Splunk Operations</h3>
+            </div>
+            <p>
+              Digital artifact extraction (Prefetch, Amcache, Registry), log analysis pipelines, and enterprise SIEM incident investigation.
+            </p>
+            <ul style="color: var(--text-muted);">
+              <li><strong>DFIR (Entries 9–10):</strong> Execution artifacts, Shimcache, and memory timeline reconstruction.</li>
+              <li><strong>Splunk (Entries 11–15):</strong> SPL queries, incident handling, and Boss of the SOC (BOTS) triage.</li>
+            </ul>
+          </div>
+          <div class="tag-list">
+            <span class="tag">DFIR</span>
+            <span class="tag">Amcache</span>
+            <span class="tag">Prefetch</span>
+            <span class="tag">Splunk SPL</span>
+            <span class="tag">BOTS</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <!-- Technical & Operational Skills Section -->
     <section id="skills">
       <div class="section-header">

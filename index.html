@@ -993,6 +993,48 @@
 
   </main>
 
+.cert-entry {
+      padding: 0.85rem;
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      margin-bottom: 0.75rem;
+    }
+
+    .cert-entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .cert-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.4rem;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .verify-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.2rem 0.55rem;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      border-radius: 4px;
+      color: var(--accent-green);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+    }
+
+    .verify-pill:hover {
+      background: rgba(16, 185, 129, 0.2);
+      color: var(--accent-green);
+    }
+  
   <footer>
     <div class="container">
       <p>
